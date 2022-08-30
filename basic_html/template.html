@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            color: white;
+            border-radius: 10px;
+        }
+        header {
+            background: gray;
+            color: white;
+            width: 100%;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            height: 260vh;
+            margin: 5px 0;
+        }
+
+        section {
+            flex: 3;
+            margin: 0 5px;
+        }
+
+        nav, aside {
+            flex: 1;
+        }
+
+        nav {
+            background: darkblue;
+        }
+
+        aside {
+            background: darkcyan;
+        }
+
+        footer {
+            background: darkslateblue;
+            color: white;
+            height: 10vh;
+            text-align: center;
+        }
+
+        article {
+            height: 240vh;
+            background: darkgoldenrod;
+            margin: 5px 0;
+        }
+
+        section header {
+            background: darkred;
+        }
+
+        section footer{
+            background: darkmagenta;
+            height: 10vh;
+        }
+    </style>
+</head>
+<body>
+    <header>Header </header>
+    <div>
+        <nav>Nav Links</nav>
+        <section>
+            <header>
+                Article Header
+            </header>
+            <article>
+                Article are blah blah
+            </article>
+            <footer>
+                Article end
+            </footer>
+        </section>
+        <aside>Relavant Link</aside>
+    </div>
+
+    <footer>All Right Reserved</footer>
+</body>
+</html>
