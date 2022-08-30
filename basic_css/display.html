@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Display</title>
+    <style>
+        .block, span {
+            background: cyan;
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 200px;
+            height: 100px;
+        }
+
+        span {
+            display: inline-block;
+        }
+
+        .wrap {
+            display: flex;
+        }
+
+        .item {
+            flex-grow: 1;
+            flex-grow: 1;
+            background: cyan;
+            margin: 10px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        .wrap div:first-child {
+            flex-grow: 2;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="block">A block</div>
+    <div class="block"> Another Block</div>
+    <span>Some Content</span>
+    <span>More Content</span>
+
+    <div class="wrap">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+</body>
