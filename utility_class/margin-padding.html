@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin & Padding</title>
+    <link rel="stylesheet" href="../bootstrap-5.1.1-dist/css/bootstrap.min.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <!-- text-center, start, end, center, justify -->
+    <p class="border mt-3 mr-4 mb-2 lh-base ml-1 fw-light fst-italic text-decoration-line-through px-4 py-5 text-center">
+        Hello Margin and Padding BS and Also testing Text class
+    </p>
+    <h1 class="text-center text-md-start">Center Title (start and end not left right)</h1>
+
+    <div class="position-relative bg-dark m-4" style="height: 200px; width: 600px;">
+        <div class="position-absolute bg-light top-50 start-50 w-25 h-25"></div>
+    </div>
+
+    <div class="position-relative bg-dark" style="height: 200px; width: 600px;">
+        <div class="position-absolute bg-light top-50 start-50 w-25 h-25 translate-middle"></div>
+    </div>
+
+    <button class="btn btn-primary">
+        Goto user list <span class="badge bg-danger">20</span>
+    </button>
+    <hr>
+    <button class="btn btn-primary position-relative">
+        Goto user list <span class="badge bg-danger position-absolute top-0 start-100">20</span>
+    </button>
+    <hr>
+    <button class="btn btn-primary position-relative">
+        Goto user list <span class="badge bg-danger rounded-pill position-absolute top-0 start-100 translate-middle">20</span>
+    </button>
+    <hr>
+
+    <div class="border p-4 mb-4 bg-light shadow-sm">
+        Shadow Content
+    </div>
+    <div class="border p-4 mb-4 bg-light shadow">
+        Shadow Content
+    </div>
+    <div class="border p-4 mb-4 bg-light shadow-lg">
+        Shadow Content
+    </div>
+</body>
+</html>
