@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <title>Carousals</title>
+    <link rel="stylesheet" href="../bootstrap-5.1.1-dist/css/bootstrap.min.css">
+    <style>
+    
+    </style>
+</head>
+<body>
+    <div class="carousel slide" data-bs-ride="carousel" id="slide">
+
+        <ol class="carousel-indicators">
+            <li data-bs-target="#slide" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#slide" data-bs-slide-to="1"></li>
+            <li data-bs-target="#slide" data-bs-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="bg-primary" style="height: 200px;"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="bg-success" style="height: 200px;"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="bg-warning" style="height: 200px;"></div>
+            </div>
+        </div>
+
+        <a href="#slide" class="carousel-control-prev" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#slide" class="carousel-control-next" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">Spinners</h5>
+        </div>
+        <div class="card-body">
+            <span class="spinner-border text-primary"></span>
+            <span class="spinner-border text-success"></span>
+            <span class="spinner-border text-warning"></span>
+            <div class="my-5">
+                <button class="btn btn-primary" disabled>
+                    <span class="spinner-border spinner-border-sm"></span>
+                    <span class="ml-2">Loading...</span>
+                </button>
+            </div>
+
+            <span class="spinner-grow text-primary"></span>
+            <span class="spinner-grow text-success"></span>
+            <span class="spinner-grow text-danger"></span>
+            <span class="spinner-grow text-warning"></span>
+        </div>
+    </div>
+<script src="../bootstrap-5.1.1-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
