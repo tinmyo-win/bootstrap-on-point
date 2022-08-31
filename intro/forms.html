@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <link rel="stylesheet" href="../bootstrap-5.1.1-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <form>
+        <div class="input-group my-3 ">
+            <input type="text" class="form-control">
+            <button class="btn btn-secondary">Search</button>
+        </div>
+
+        <label for="email">Enter your Gmail Address</label>
+        <div class="input-group mb-3">
+            <input type="text" id="email" class="form-control">
+            <span class="input-group-text">@gamil.com</span>
+        </div>
+        <div class="mb-3">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name">
+        </div>
+        <div class="mb-3">
+            <label for="address">Address</label>
+            <textarea id="address" class="form-control"></textarea>
+            <div class="form-text">Enter your full address</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="gender">Gender</label>
+            <select id="gender" class="form-select">
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="name"
+                    placeholder="Your Name">
+            <label for="name">Your Name</label>
+        </div>
+
+        <button class="btn btn-primary mb-3">Submmit Form</button>
+    </form>
+
+    <div class="btn-group">
+        <a class="btn btn-primary" href="#">Left</a>
+        <a class="btn btn-primary" href="#">Center</a>
+        <a class="btn btn-primary" href="#">Right</a>
+    </div>
+    <div class="btn-group">
+        <a class="btn btn-outline-primary" href="#">Left</a>
+        <a class="btn btn-outline-primary" href="#">Center</a>
+        <a class="btn btn-outline-primary" href="#">Right</a>
+    </div>
+
+    <ul class="pagination">
+        <li class="page-item">
+            <a href="#" class="page-link">Previous</a>
+        </li>
+        <li class="page-item">
+            <a href="#" class="page-link">1</a>
+        </li>
+        <li class="page-item">
+            <a href="#" class="page-link">2</a>
+        </li>
+        <li class="page-item">
+            <a href="#" class="page-link">3</a>
+        </li>
+        <li class="page-item">
+            <a href="#" class="page-link">Next</a>
+        </li>
+    </ul>
+</body>
