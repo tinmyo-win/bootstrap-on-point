@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+    <link rel="stylesheet" href="../bootstrap-5.1.1-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm mb-3 sticky-top navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">MCU Heroes</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link ">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link ">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="hell"></div>
+
+    <script>
+
+        let count = 0
+        if (count == 5) {
+            
+        }
+
+        let heroes = [ "Doctor Strange","iron man","Hello", "Hi", "Ok", "Hey" ]
+        heroes.forEach(home)
+
+        function home(item) {
+            let div = document.createElement("div")
+            div.setAttribute("title", "I'm "+item)
+            div.classList.add("card", "bg-dark", "text-light")
+            document.body.appendChild(div)
+
+            let div1 = document.createElement("div")
+            div1.classList.add("card-body")
+            div.appendChild(div1)
+
+            let h5 = document.createElement("h5")
+            h5.classList.add("card-title")
+            h5.textContent = item
+            div1.appendChild(h5)
+
+            let p = document.createElement("p")
+            p.textContent = "Hey Is you and me"
+            div1.appendChild(p)
+
+            let a = document.createElement("a")
+            a.classList.add("btn", "btn-primary")
+            a.textContent = "See More"
+            a.href = "cards.html"
+            div1.appendChild(a)
+
+            count++
+        
+        }
+
+    </script>
+</body>
+</html>
